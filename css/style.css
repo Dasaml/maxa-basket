@@ -238,6 +238,7 @@ body.maxa-basket {
   box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
 }
 /* Site header end */
+
 /* =========================================================
 HERO BANNER
 ========================================================= */
@@ -250,7 +251,7 @@ HERO BANNER
   overflow: visible;
   background-image: url('../img/hero-image-bg-hp.png');
   background-size: cover;
-  background-position: center;
+  background-position: 30% 100%;
   background-repeat: no-repeat;
   color: #ffffff;
   z-index: 55;
@@ -277,7 +278,7 @@ HERO BANNER
   text-align: center;
 }
 .maxa-basket .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
@@ -288,10 +289,10 @@ HERO BANNER
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
 }
 .maxa-basket .hero-title-second img {
-  width: 40px;
+  width: 45px;
   height: auto;
   object-fit: contain;
   flex-shrink: 0;
@@ -299,7 +300,7 @@ HERO BANNER
   transform-origin: center bottom;
 }
 .maxa-basket .hero-content h2 {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 700;
   color: #FFB233;
   line-height: 1;
@@ -961,9 +962,6 @@ HERO BANNER
   .maxa-basket .hero-title-second img {
     width: 45px;
   }
-  .maxa-basket .hero-content h2 {
-    font-size: 1.8rem;
-  }
   .maxa-basket .hero-subtitle img {
     max-width: 280px;
   }
@@ -1014,6 +1012,9 @@ HERO BANNER
   }
   .maxa-basket .hero-container {
     flex-direction: row;
+  }
+  .maxa-basket .hero-content h2 {
+    font-size: 1.6rem;
   }
 }
 @media(min-width: 992px) {
@@ -1131,7 +1132,7 @@ HERO BANNER
     width: 55px;
   }
   .maxa-basket .hero-content h2 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
   .maxa-basket .hero-subtitle img {
     max-width: 320px;
@@ -1158,7 +1159,7 @@ HERO BANNER
     padding: 50px 0;
   }
   .maxa-basket .hero-content h1 {
-    font-size: 5rem;
+    font-size: 5.2rem;
   }
   .maxa-basket .hero-title-second {
     font-size: 4.2rem;
@@ -1167,7 +1168,7 @@ HERO BANNER
     width: 60px;
   }
   .maxa-basket .hero-content h2 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
   .maxa-basket .container {
     max-width: 1070px;
