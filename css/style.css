@@ -13,22 +13,19 @@
   font-display: swap;
 }
 @keyframes ballBounce {
-    0%,
-    100% {
-        transform: translateY(0) scaleY(1);
-    }
-
-    45% {
-        transform: translateY(-5px) scaleY(1);
-    }
-
-    55% {
-        transform: translateY(-5px) scaleY(1);
-    }
-
-    90% {
-        transform: translateY(0) scaleY(0.97);
-    }
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+  45% {
+    transform: translateY(-5px) scaleY(1);
+  }
+  55% {
+    transform: translateY(-5px) scaleY(1);
+  }
+  90% {
+    transform: translateY(0) scaleY(0.97);
+  }
 }
 html {
   scroll-behavior: smooth;
@@ -92,6 +89,9 @@ body.maxa-basket {
   color: #ffffff;
   order: 1;
 }
+.maxa-basket iframe {
+    border: none;
+}
 .maxa-basket .container {
   width: 100%;
   max-width: 100%;
@@ -101,99 +101,85 @@ body.maxa-basket {
   box-sizing: border-box;
 }
 .maxa-basket .section {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    scroll-margin-top: 50px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  scroll-margin-top: 50px;
 }
-
 /* Site header */
 .maxa-basket .maxa-site-header {
-    background-color: #6000BF;
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 55;
-    display: block;
+  background-color: #6000BF;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 55;
+  display: block;
 }
-
 .maxa-basket .maxa-header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 0 15px;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0 15px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-
 .maxa-basket .maxa-header-inner img {
-    display: inline-block;
-    width: 100%;
-    height: 35px;
+  display: inline-block;
+  width: 100%;
+  height: 35px;
 }
-
 /* Hamburger tlačítko */
 .maxa-basket .maxa-hamburger-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 28px;
-    z-index: 1001;
-    padding: 0;
-    order: 3;
-    margin-left: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 28px;
+  z-index: 1001;
+  padding: 0;
+  order: 3;
+  margin-left: auto;
 }
-
-
 /* --- MOBILNÍ NAVIGACE --- */
-
 .maxa-basket .maxa-nav-wrap {
-    width: 100%;
-    display: none;
-    background-color: #6000BF;
-    z-index: 999;
+  width: 100%;
+  display: none;
+  background-color: #6000BF;
+  z-index: 999;
 }
-
 .maxa-basket .maxa-nav-wrap.showMenu {
-    display: block;
-    order: 4;
+  display: block;
+  order: 4;
 }
-
 .maxa-basket .maxa-hamburger-btn .icon-hamburger {
-    display: block;
+  display: block;
 }
-
 .maxa-basket .maxa-hamburger-btn .icon-close {
-    display: none;
+  display: none;
 }
-
 .maxa-basket .maxa-hamburger-btn.is-active .icon-hamburger {
-    display: none;
+  display: none;
 }
-
 .maxa-basket .maxa-hamburger-btn.is-active .icon-close {
-    display: block;
+  display: block;
 }
-
 .maxa-basket .maxa-nav-list {
-    list-style: none;
-    padding: 15px 15px 25px 20px;
-    margin: 15px 0 0 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  list-style: none;
+  padding: 15px 15px 25px 20px;
+  margin: 15px 0 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-
 .maxa-basket .maxa-nav-link {
   position: relative;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1rem;
-    display: block;
-    padding: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  padding: 10px 0;
 }
 .maxa-basket nav .maxa-nav-link:before {
   content: '';
@@ -228,38 +214,33 @@ body.maxa-basket {
   -ms-transform: scaleX(0);
   transform: scaleX(0);
 }
-
 .maxa-basket .maxa-btn-pravidla {
-    background-color: #FFB233;
-    border-width: 0;
-    min-width: 70px;
-    border-radius: 38px;
-    color: #6000BF;
-    padding: 10px 20px;
-    margin: 10px 0;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0;
-    cursor: pointer;
-    opacity: 1;
-    transition: all .3s ease-in-out;
+  background-color: #FFB233;
+  border-width: 0;
+  min-width: 70px;
+  border-radius: 38px;
+  color: #6000BF;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  cursor: pointer;
+  opacity: 1;
+  transition: all .3s ease-in-out;
 }
-
 .maxa-basket .maxa-btn-pravidla:hover {
-    transform: translateY(2px);
-    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+  transform: translateY(2px);
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
 }
-
 /* Site header end */
-
 /* =========================================================
-   HERO BANNER
-   ========================================================= */
-
+HERO BANNER
+========================================================= */
 .maxa-basket .hero-section {
   width: 100%;
   margin: 0;
@@ -274,7 +255,6 @@ body.maxa-basket {
   color: #ffffff;
   z-index: 55;
 }
-
 .maxa-basket .hero-container {
   display: flex;
   flex-direction: column;
@@ -284,7 +264,6 @@ body.maxa-basket {
   gap: 0;
   box-sizing: border-box;
 }
-
 .maxa-basket .hero-content {
   flex: none;
   width: 100%;
@@ -297,7 +276,6 @@ body.maxa-basket {
   align-items: center;
   text-align: center;
 }
-
 .maxa-basket .hero-content h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -306,14 +284,12 @@ body.maxa-basket {
   letter-spacing: 1px;
   line-height: 1;
 }
-
 .maxa-basket .hero-title-second {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-size: 2.5rem;
 }
-
 .maxa-basket .hero-title-second img {
   width: 40px;
   height: auto;
@@ -322,7 +298,6 @@ body.maxa-basket {
   animation: ballBounce 1.2s ease-in-out infinite;
   transform-origin: center bottom;
 }
-
 .maxa-basket .hero-content h2 {
   font-size: 1.6rem;
   font-weight: 700;
@@ -331,18 +306,15 @@ body.maxa-basket {
   margin: 10px 0 35px;
   text-transform: uppercase;
 }
-
 .maxa-basket .hero-subtitle {
   margin-left: 0;
 }
-
 .maxa-basket .hero-subtitle img {
   display: block;
   width: 100%;
   max-width: 280px;
   height: auto;
 }
-
 .maxa-basket .person-trophy-inner {
   flex: none;
   width: 100%;
@@ -356,7 +328,6 @@ body.maxa-basket {
   align-items: flex-end;
   overflow: visible;
 }
-
 .maxa-basket .hero-person,
 .maxa-basket .hero-trophy {
   flex: 1;
@@ -372,15 +343,12 @@ body.maxa-basket {
   position: relative;
   overflow: visible;
 }
-
 .maxa-basket .hero-person {
   z-index: 10;
 }
-
 .maxa-basket .hero-trophy {
   z-index: 5;
 }
-
 .maxa-basket .hero-person img {
   display: block;
   width: 100%;
@@ -389,7 +357,6 @@ body.maxa-basket {
   position: relative;
   z-index: 10;
 }
-
 .maxa-basket .hero-trophy img {
   display: block;
   width: 100%;
@@ -397,18 +364,15 @@ body.maxa-basket {
   object-fit: contain;
   margin: 0;
 }
-
 .maxa-basket .schedule-section {
   padding: 10px 0 50px;
   color: #ffffff;
   background-color: #FF4B00;
 }
-
 .maxa-basket .schedule-container {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .maxa-basket .schedule-title {
   text-align: center;
   font-size: 1.8rem;
@@ -418,14 +382,12 @@ body.maxa-basket {
   margin-bottom: 30px;
   color: #ffffff;
 }
-
 .maxa-basket .schedule-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   align-items: stretch;
 }
-
 .maxa-basket .schedule-card {
   position: relative;
   background: #6000BF;
@@ -438,21 +400,18 @@ body.maxa-basket {
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-
 .maxa-basket .card-logo {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
 }
-
 .maxa-basket .card-logo img {
   width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 16px 16px 0 0;
 }
-
 .maxa-basket .card-name p {
   color: #ffffff;
   font-weight: 700;
@@ -466,41 +425,35 @@ body.maxa-basket {
   flex-direction: column;
   margin: 0;
 }
-
 .maxa-basket .card-date p {
   color: #FFB233;
-    font-weight: 700;
+  font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.2;
- margin: 15px 0;
+  margin: 15px 0;
 }
-
 .maxa-basket .card-name span {
   font-size: 0.85rem;
   font-weight: 400;
   text-transform: lowercase;
   opacity: 0.8;
 }
-
 .maxa-basket .card-date {
   font-weight: 700;
   color: #FFB233;
   font-size: 1rem;
 }
-
 .maxa-basket .features-section {
   background-image: url(../img/na-co-se-muzete-tesit-podklad.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 20px 0 40px;
   color: #ffffff;
 }
-
 .maxa-basket .features-container {
   margin: 0 auto;
 }
-
 .maxa-basket .features-title {
   text-align: center;
   font-size: 1.8rem;
@@ -510,14 +463,12 @@ body.maxa-basket {
   margin-bottom: 40px;
   color: #ffffff;
 }
-
 .maxa-basket .features-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-
 .maxa-basket .feature-item {
   display: flex;
   flex-direction: column;
@@ -525,7 +476,6 @@ body.maxa-basket {
   text-align: center;
   max-width: 250px;
 }
-
 .maxa-basket .feature-icon {
   height: 70px;
   display: flex;
@@ -533,23 +483,19 @@ body.maxa-basket {
   justify-content: center;
   margin-bottom: 15px;
 }
-
 .maxa-basket .feature-icon img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
 }
-
 .maxa-basket .feature-text {
   font-size: 0.95rem;
   line-height: 1.4;
   font-weight: 400;
 }
-
 .maxa-basket .feature-text strong {
   color: #FFB233;
 }
-
 .maxa-basket .feature-arrow {
   font-size: 1.5rem;
   color: #FFB233;
@@ -557,30 +503,25 @@ body.maxa-basket {
   transform: rotate(90deg);
   margin: -10px 0;
 }
-
 .maxa-basket .winners-section {
   background-color: #FF4B00;
   color: #ffffff;
   padding: 20px 0 50px;
 }
-
 .maxa-basket .videos-section {
   background-image: url(../img/videa-podklad.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
   padding: 20px 0 50px;
 }
-
 .maxa-basket .block-section {
   margin-bottom: 60px;
 }
-
 .maxa-basket .block-section:last-child {
   margin-bottom: 0;
 }
-
 .maxa-basket .section-title {
   text-align: center;
   font-size: 1.8rem;
@@ -591,21 +532,19 @@ body.maxa-basket {
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
-
 .maxa-basket .cards-grid {
   display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-items: stretch; 
-    width: 100%;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: stretch;
+  width: 100%;
 }
-
 .maxa-basket .item-card {
   background-color: #6000BF;
   border-radius: 16px;
   padding: 20px;
-  max-width: 100%; 
-    width: 100%;
+  max-width: 100%;
+  width: 100%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   display: flex;
@@ -613,20 +552,17 @@ body.maxa-basket {
   justify-content: space-between;
   align-items: center;
 }
-
 .maxa-basket .card-winner-info {
   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-
 .maxa-basket .trophy-icon img {
   width: 100%;
   height: 50px;
 }
-
 .maxa-basket .card-image {
   width: auto;
   height: 100%;
@@ -635,13 +571,11 @@ body.maxa-basket {
   margin-bottom: 12px;
   background-color: #000;
 }
-
 .maxa-basket .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .maxa-basket .card-footer-text {
   text-align: left;
   font-size: 1.1rem;
@@ -649,7 +583,6 @@ body.maxa-basket {
   color: #FFB233;
   padding: 0;
 }
-
 .maxa-basket .video-wrapper {
   position: relative;
   width: 100%;
@@ -658,7 +591,6 @@ body.maxa-basket {
   overflow: hidden;
   background-color: #000;
 }
-
 .maxa-basket .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -667,20 +599,18 @@ body.maxa-basket {
   height: 100%;
   border: none;
 }
-
 .maxa-basket .item-card.video-card {
   background-color: #6000BF;
   border-radius: 16px;
   padding: 0;
-  max-width: 100%; 
-    width: 100%;
+  max-width: 100%;
+  width: 100%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .maxa-basket .card-footer-badge {
   background-color: #6000BF;
   color: #ffffff;
@@ -695,11 +625,6 @@ body.maxa-basket {
   display: block;
   color: #FFB233;
 }
-
-/* =========================================
-   PLAY SECTION
-========================================= */
-
 .maxa-basket .play-section {
   position: relative;
   background-color: #FF4B00;
@@ -707,12 +632,6 @@ body.maxa-basket {
   color: #ffffff;
   padding: 5px 0 0;
 }
-
-
-/* =========================================
-   CONTAINER
-========================================= */
-
 .maxa-basket .play-container {
   position: relative;
   width: 100%;
@@ -722,12 +641,6 @@ body.maxa-basket {
   justify-content: center;
   align-items: center;
 }
-
-
-/* =========================================
-   LABELS
-========================================= */
-
 .maxa-basket .play-label {
   position: relative;
   z-index: 20;
@@ -743,12 +656,6 @@ body.maxa-basket {
   text-transform: uppercase;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-
-/* =========================================
-   PHONE
-========================================= */
-
 .maxa-basket .play-phone {
   position: relative;
   width: 100%;
@@ -760,18 +667,11 @@ body.maxa-basket {
   z-index: 3;
   order: 3;
 }
-
 .maxa-basket .play-phone img {
   display: block;
   width: auto;
   height: 465px;
 }
-
-
-/* =========================================
-   CENTER
-========================================= */
-
 .maxa-basket .play-center {
   position: relative;
   width: 100%;
@@ -780,23 +680,13 @@ body.maxa-basket {
   z-index: 15;
   order: 1;
 }
-
-
-/* =========================================
-   TEXT
-========================================= */
-
 .maxa-basket .play-content {
   position: relative;
   z-index: 10;
-
   width: 100%;
-
   text-align: center;
-
   padding-top: 35px;
 }
-
 .maxa-basket .play-content h2 {
   margin: 0 0 10px;
   color: #ffffff;
@@ -805,7 +695,6 @@ body.maxa-basket {
   line-height: 1.2;
   text-transform: uppercase;
 }
-
 .maxa-basket .play-content p {
   margin: 0 0 30px;
   color: #ffffff;
@@ -814,15 +703,9 @@ body.maxa-basket {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .maxa-basket .play-content p strong {
   color: #6000BF;
 }
-
-/* =========================================
-   FORM
-========================================= */
-
 .maxa-basket .play-form {
   position: relative;
   z-index: 10;
@@ -831,7 +714,6 @@ body.maxa-basket {
   text-align: center;
   margin: 0 auto;
 }
-
 .maxa-basket .play-form input {
   display: block;
   width: 100%;
@@ -847,100 +729,65 @@ body.maxa-basket {
   text-align: center;
   outline: none;
 }
-
 .maxa-basket .play-form input::placeholder {
   color: #a5a5b5;
   opacity: 1;
 }
-
 .maxa-basket .play-form p {
   margin: 25px 0 10px;
-
   color: #ffffff;
-
   font-size: 1rem;
   line-height: 1;
-
   text-align: left;
 }
-
-
-/* =========================================
-   CHECKBOX
-========================================= */
-
+.maxa-basket .form-message.error,
+.maxa-basket .form-message.success {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  font-size: .9rem;
+  line-height: 1.2;
+  margin: 10px 0 0;
+}
 .maxa-basket .play-form .checkbox-group {
   margin: 15px 0 20px;
-
   text-align: left;
 }
-
 .maxa-basket .play-form .checkbox-group label {
   display: flex;
-
   align-items: flex-start;
-
   gap: 8px;
-
   color: #ffffff;
-
   font-size: 1rem;
   line-height: 1.3;
-
   cursor: pointer;
 }
-
 .maxa-basket .play-form .checkbox-group input[type="checkbox"] {
   flex: 0 0 auto;
-
-  width: 16px;
-  height: 16px;
-
+  width: 20px;
+  height: 20px;
   margin: 1px 0 0;
-
   accent-color: #6000BF;
-
   cursor: pointer;
 }
-
-
-/* =========================================
-   BUTTON
-========================================= */
-
 .maxa-basket .play-form button {
   display: block;
-
   width: 100%;
   height: 65px;
-
   border: none;
   border-radius: 18px;
-
   background-color: #6000BF;
   color: #ffffff;
-
   font-family: "Maxa Grotesk", Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-
   text-transform: uppercase;
-
   cursor: pointer;
-
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
 .maxa-basket .play-form button:hover {
   transform: translateY(-2px);
   opacity: 0.9;
 }
-
-
-/* =========================================
-   TICKET
-========================================= */
-
 .maxa-basket .play-ticket {
   position: relative;
   width: 100%;
@@ -953,7 +800,6 @@ body.maxa-basket {
   order: 2;
   margin: 0 0 45px;
 }
-
 .maxa-basket .play-ticket::before {
   display: none;
   content: "";
@@ -969,8 +815,6 @@ body.maxa-basket {
   z-index: 0;
   pointer-events: none;
 }
-
-
 .maxa-basket .play-ticket img {
   display: block;
   width: 100%;
@@ -980,7 +824,6 @@ body.maxa-basket {
   object-position: bottom center;
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.35));
 }
-
 /* Footer */
 .maxa-basket .site-footer {
   display: block;
@@ -1018,7 +861,7 @@ body.maxa-basket {
   color: #ffffff;
   font-size: .9rem;
   font-weight: 400;
-    text-align: center;
+  text-align: center;
 }
 .maxa-basket .bingo-preferences-center {
   color: #ffffff;
@@ -1098,16 +941,10 @@ body.maxa-basket {
 }
 .maxa-basket .up-inner svg {
   overflow: hidden;
-    vertical-align: middle;
+  vertical-align: middle;
 }
-
-
-
 /* --- MEDIA QUERY  --- */
-
 @media(min-width: 768px) {
-  /* HERO - TABLET / DESKTOP */
-
   .maxa-basket .hero-content {
     flex: 1;
     width: auto;
@@ -1115,47 +952,38 @@ body.maxa-basket {
     align-items: flex-start;
     text-align: left;
   }
-
   .maxa-basket .hero-content h1 {
     font-size: 3.5rem;
   }
-
   .maxa-basket .hero-title-second {
     font-size: 2.8rem;
   }
-
   .maxa-basket .hero-title-second img {
     width: 45px;
   }
-
   .maxa-basket .hero-content h2 {
     font-size: 1.8rem;
   }
-
   .maxa-basket .hero-subtitle img {
     max-width: 280px;
   }
-
   .maxa-basket .person-trophy-inner {
     flex: 2;
     width: auto;
   }
-
   .maxa-basket .hero-person,
   .maxa-basket .hero-trophy {
     flex: 1;
     width: auto;
   }
-
   .maxa-basket .maxa-header-inner img {
     display: block;
     width: 100%;
     height: 60px;
-}
+  }
   .maxa-basket .schedule-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
   .maxa-basket .schedule-title {
     font-size: 2.2rem;
   }
@@ -1163,288 +991,242 @@ body.maxa-basket {
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
-  .maxa-basket .item-card {
-    max-width: 260px;
-  }
-  
   .maxa-basket .section-title {
     font-size: 2.2rem;
   }
-
   .maxa-basket .play-content h2 {
     font-size: 2.2rem;
   }
-
   .maxa-basket .features-grid {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     gap: 15px;
   }
-
   .maxa-basket .feature-arrow {
     transform: rotate(0deg);
     margin: 0;
     align-self: center;
     font-size: 1.8rem;
   }
-
   .maxa-basket .play-ticket img {
     max-width: 50%;
   }
-
   .maxa-basket .hero-container {
     flex-direction: row;
   }
 }
-
 @media(min-width: 992px) {
-
   .maxa-basket .maxa-header-inner {
-        margin: 0 auto;
-        padding: 1.5em 0;
-        flex-wrap: nowrap;
-    }
-
-    .maxa-basket .maxa-hamburger-btn {
-        display: none;
-    }
-
-    .maxa-basket .maxa-nav-wrap {
-        display: flex;
-        width: 50%;
-        flex-direction: row;
-        justify-content: flex-end;
-        order: 2;
-    }
-
-    .maxa-basket .maxa-nav-list {
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-        padding: 0;
-        margin: 0;
-        border-top: none;
-    }
-
-    .maxa-basket .maxa-nav-link {
-        font-size: 1rem;
-    }
-
-    .maxa-basket .maxa-btn-pravidla {
-        margin: 0;
-    }
-
-    .maxa-basket .hero-container {
-      gap: 30px;
-    }
-
-    .maxa-basket .hero-person img {
-      height: calc(100% + 25px);
-    }
-
-    .maxa-basket .play-container {
-      position: relative;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-end;
-    }
-
-    .maxa-basket .play-phone {
-      position: relative;
-      width: 35%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      z-index: 3;
-      order: 1;
-    }
-
-    .maxa-basket .play-center {
-      position: relative;
-      width: 100%;
-      height: auto;
-      padding: 0 0 50px;
-      z-index: 15;
-      order: 2;
-    }
-
-    .maxa-basket .play-ticket {
-      position: relative;
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 10;
-      order: 3;
-      margin: 0 0 45px;
-    }
-
-    .maxa-basket .play-phone img {
-      height: 400px;
-    }
-
-    .maxa-basket .play-content p {
-      margin: 0 0 125px;
-    }
-
-    .maxa-basket .play-ticket img {
-      max-width: 64%;
-    }
-
-      .maxa-basket .play-ticket::before {
-        display: block;
-        content: "";
-        position: absolute;
-        bottom: -50px;
-        right: 80px;
-        width: 570px;
-        height: 100%;
-        background-image: url("../img/tiket-basketbalista.png");
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        background-size: contain;
-        z-index: 0;
-        pointer-events: none;
-    }
+    margin: 0 auto;
+    padding: 1.5em 0;
+    flex-wrap: nowrap;
+  }
+  .maxa-basket .maxa-hamburger-btn {
+    display: none;
+  }
+  .maxa-basket .maxa-nav-wrap {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: flex-end;
+    order: 2;
+  }
+  .maxa-basket .maxa-nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    border-top: none;
+  }
+  .maxa-basket .maxa-nav-link {
+    font-size: 1rem;
+  }
+  .maxa-basket .maxa-btn-pravidla {
+    margin: 0;
+  }
+  .maxa-basket .hero-container {
+    gap: 30px;
+  }
+  .maxa-basket .hero-person img {
+    height: calc(100% + 25px);
+  }
+  .maxa-basket .play-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .maxa-basket .play-phone {
+    position: relative;
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 3;
+    order: 1;
+  }
+  .maxa-basket .play-center {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 0 50px;
+    z-index: 15;
+    order: 2;
+  }
+  .maxa-basket .play-ticket {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    order: 3;
+    margin: 0 0 45px;
+  }
+  .maxa-basket .play-phone img {
+    height: 400px;
+  }
+  .maxa-basket .play-content p {
+    margin: 0 0 125px;
+  }
+  .maxa-basket .play-ticket img {
+    max-width: 64%;
+  }
+  .maxa-basket .play-ticket::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: 80px;
+    width: 570px;
+    height: 100%;
+    background-image: url("../img/tiket-basketbalista.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    z-index: 0;
+    pointer-events: none;
+  }
 }
-
 @media(min-width: 1024px) {
-  /* HERO - DESKTOP */
-
   .maxa-basket .hero-content {
     padding: 30px 0;
   }
-
   .maxa-basket .hero-content h1 {
     font-size: 4.5rem;
   }
-
   .maxa-basket .hero-title-second {
     font-size: 3.7rem;
   }
-
   .maxa-basket .hero-title-second img {
     width: 55px;
   }
-
   .maxa-basket .hero-content h2 {
     font-size: 2.2rem;
   }
-
   .maxa-basket .hero-subtitle img {
     max-width: 320px;
   }
-
   .maxa-basket .container {
     max-width: 900px;
     padding-left: 0;
     padding-right: 0;
   }
-    .maxa-basket .schedule-grid {
+  .maxa-basket .schedule-grid {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
   }
-  
-
   .maxa-basket .feature-item {
     flex: 1;
     max-width: 180px;
   }
-
   .maxa-basket .features-title {
     font-size: 2.2rem;
   }
 }
-
 @media(min-width: 1280px) {
-  /* HERO - LARGE DESKTOP */
   .maxa-basket .hero-content {
     padding: 50px 0;
   }
-
   .maxa-basket .hero-content h1 {
     font-size: 5rem;
   }
-
   .maxa-basket .hero-title-second {
     font-size: 4.2rem;
   }
-
   .maxa-basket .hero-title-second img {
     width: 60px;
   }
-
   .maxa-basket .hero-content h2 {
     font-size: 2.4rem;
   }
-
   .maxa-basket .container {
     max-width: 1070px;
   }
-
   .maxa-basket .person-trophy-inner {
     gap: 30px;
   }
-
   .maxa-basket .play-phone img {
-      height: 415px;
-    }
-
-    .maxa-basket .play-ticket img {
-      max-width: 50%;
-    }
-
-    .maxa-basket .play-ticket::before {
-      content: "";
-      position: absolute;
-      bottom: -50px;
-      right: 155px;
-      width: 570px;
-      height: 100%;
-      background-image: url("../img/tiket-basketbalista.png");
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      background-size: contain;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    .maxa-basket .play-center {
-      padding: 0 0 60px;
-    }
-
-    .maxa-basket .play-form input {
-      font-size: 1.3rem;
-    }
-
-    .maxa-basket .winners-section {
-      padding: 15px 0 60px;
-    }
-    .maxa-basket .maxa-nav-list {
-        gap: 35px;
-    }
-    .maxa-basket .cards-grid {
+    height: 435px;
+  }
+  .maxa-basket .play-ticket img {
+    max-width: 53%;
+  }
+  .maxa-basket .play-ticket::before {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    right: 155px;
+    width: 570px;
+    height: 100%;
+    background-image: url("../img/tiket-basketbalista.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .maxa-basket .play-center {
+    padding: 0 0 60px;
+  }
+  .maxa-basket .play-form input {
+    font-size: 1.3rem;
+  }
+  .maxa-basket .winners-section {
+    padding: 15px 0 60px;
+  }
+  .maxa-basket .maxa-nav-list {
+    gap: 35px;
+  }
+  .maxa-basket .cards-grid {
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
   }
 }
-
+@media (min-width: 1281px) and (max-width: 1399px) {
+  .maxa-basket .play-ticket img {
+    max-width: 60%;
+  }
+}
 @media(min-width: 1400px) {
   .maxa-basket .container {
     max-width: 1200px;
   }
 }
-
 @media(min-width: 1600px) {
   .maxa-basket .container {
     max-width: 1100px;
+  }
+  .maxa-basket .play-ticket img {
+    max-width: 60%;
   }
 }
