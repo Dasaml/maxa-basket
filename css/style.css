@@ -468,7 +468,7 @@ HERO BANNER
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 .maxa-basket .feature-item {
   display: flex;
@@ -482,7 +482,7 @@ HERO BANNER
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .maxa-basket .feature-icon img {
   max-height: 100%;
@@ -490,7 +490,7 @@ HERO BANNER
   object-fit: contain;
 }
 .maxa-basket .feature-text {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.4;
   font-weight: 400;
 }
