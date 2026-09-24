@@ -249,7 +249,7 @@ HERO BANNER
   position: relative;
   display: flex;
   overflow: visible;
-  background-image: url('../img/hero-image-bg-hp.png');
+  background-image: url('../img/hero-image-bg-hp.webp');
   background-size: cover;
   background-position: 30% 100%;
   background-repeat: no-repeat;
@@ -445,7 +445,7 @@ HERO BANNER
   font-size: 1rem;
 }
 .maxa-basket .features-section {
-  background-image: url(../img/na-co-se-muzete-tesit-podklad.png);
+  background-image: url(../img/na-co-se-muzete-tesit-podklad.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -510,7 +510,7 @@ HERO BANNER
   padding: 20px 0 50px;
 }
 .maxa-basket .videos-section {
-  background-image: url(../img/videa-podklad.png);
+  background-image: url(../img/videa-podklad.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -809,7 +809,7 @@ HERO BANNER
   right: 80px;
   width: 570px;
   height: 100%;
-  background-image: url("../img/tiket-basketbalista.png");
+  background-image: url("../img/tiket-basketbalista.webp");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
@@ -1028,7 +1028,7 @@ HERO BANNER
   }
   .maxa-basket .maxa-nav-wrap {
     display: flex;
-    width: 50%;
+    width: 70%;
     flex-direction: row;
     justify-content: flex-end;
     order: 2;
@@ -1036,7 +1036,7 @@ HERO BANNER
   .maxa-basket .maxa-nav-list {
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding: 0;
     margin: 0;
     border-top: none;
@@ -1110,7 +1110,7 @@ HERO BANNER
     right: 80px;
     width: 570px;
     height: 100%;
-    background-image: url("../img/tiket-basketbalista.png");
+    background-image: url("../img/tiket-basketbalista.webp");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
@@ -1189,7 +1189,7 @@ HERO BANNER
     right: 155px;
     width: 570px;
     height: 100%;
-    background-image: url("../img/tiket-basketbalista.png");
+    background-image: url("../img/tiket-basketbalista.webp");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
